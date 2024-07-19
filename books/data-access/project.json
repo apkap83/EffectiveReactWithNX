@@ -1,0 +1,19 @@
+{
+  "name": "books-data-access",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "books/data-access/src",
+  "projectType": "library",
+  "tags": ["type:data-access", "scope:books"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/books/data-access",
+        "main": "books/data-access/src/index.ts",
+        "tsConfig": "books/data-access/tsconfig.lib.json",
+        "assets": ["books/data-access/*.md"]
+      }
+    }
+  }
+}

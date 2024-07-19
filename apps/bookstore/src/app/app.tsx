@@ -11,10 +11,6 @@ import {
 import { BooksFeature } from '@acme/feature';
 // import NxWelcome from './nx-welcome';
 
-const StyledApp = styled.div`
-  // Your style here
-`;
-
 export function App() {
   let navigate = useNavigate();
   return (
@@ -25,6 +21,9 @@ export function App() {
         <NavigationList>
           <NavigationItem>
             <Link to="/books">Books</Link>
+          </NavigationItem>
+          <NavigationItem>
+            <Link to="/stores">Stores</Link>
           </NavigationItem>
         </NavigationList>
       </Header>
