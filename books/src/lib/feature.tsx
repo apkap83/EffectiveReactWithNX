@@ -17,7 +17,7 @@ export function BooksFeature() {
   return (
     <StyledFeature>
       <h2>Books</h2>
-      <Books books={books} />
+      <Books books={books} onAdd={(book) => alert(`Added ${book.title}`)} />
     </StyledFeature>
   );
 }

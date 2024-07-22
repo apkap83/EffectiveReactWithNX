@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { Book } from '../book/book';
+import { Book } from '@acme/books/ui';
 
 export interface BooksProps {
   books: any[];
+  onAdd: (book: any) => void;
 }
 
 const StyledBooks = styled.div`
@@ -10,11 +11,11 @@ const StyledBooks = styled.div`
   border-radius: 4px;
 `;
 
-export const Books = ({ books }: BooksProps) => {
+export const Books = ({ books, onAdd }: BooksProps) => {
   return (
     <StyledBooks>
       {books.map((book) => (
-        <Book key={book.id} book={book} />
+        <Book key={book.id} book={book} onAdd={onAdd} />
       ))}
     </StyledBooks>
   );
