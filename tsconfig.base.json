@@ -18,6 +18,7 @@
       "@acme/books/data-access": ["books/data-access/src/index.ts"],
       "@acme/books/ui": ["books/ui/src/index.ts"],
       "@acme/feature": ["books/src/index.ts"],
+      "@acme/lib/shared-models": ["lib/shared-models/src/index.ts"],
       "@acme/ui": ["ui/src/index.ts"]
     }
   },
